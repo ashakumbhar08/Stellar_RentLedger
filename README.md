@@ -1,112 +1,389 @@
-# RentLedger Pro
+# 🏠 RentLedger Pro
+
+<div align="center">
 
 [![CI](https://github.com/ashakumbhar08/Stellar_RentLedger/actions/workflows/ci.yml/badge.svg)](https://github.com/ashakumbhar08/Stellar_RentLedger/actions/workflows/ci.yml)
 [![Deploy](https://github.com/ashakumbhar08/Stellar_RentLedger/actions/workflows/deploy.yml/badge.svg)](https://github.com/ashakumbhar08/Stellar_RentLedger/actions/workflows/deploy.yml)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Stellar](https://img.shields.io/badge/Stellar-Testnet-blue)](https://stellar.org)
 
-Blockchain-powered rent payment and digital receipt platform built on Stellar.
+**Blockchain-Powered Rent Payment & Digital Receipt Platform**
 
-## Stack
-- **Frontend**: React + Freighter Wallet
-- **Backend**: Node.js + Express
-- **Database**: MongoDB
-- **Blockchain**: Stellar (Testnet)
+[Live Demo](https://stellar-rent-ledger.vercel.app) • [Documentation](./DEPLOYMENT.md) • [Smart Contract](https://stellar.expert/explorer/testnet/contract/CABGAA7QC6DB5GWKCWJICIR3EVAKSPJ34237ZVCJQAJIWZFTEIOL5LNT)
 
-## Setup
+</div>
+
+---
+
+## 🌟 Overview
+
+RentLedger Pro revolutionizes rental payments by leveraging Stellar blockchain technology to create **verifiable, tamper-proof payment records**. Say goodbye to disputes, lost receipts, and payment verification headaches.
+
+### The Problem
+Millions of tenants pay rent through cash or basic bank transfers without proper records, leading to:
+- ❌ Frequent payment disputes
+- ❌ Lost or forged receipts
+- ❌ No reliable payment history
+- ❌ Manual paperwork burden
+
+### Our Solution
+✅ **Instant blockchain receipts** for every payment  
+✅ **Shareable payment links** for easy rent collection  
+✅ **Permanent, verifiable records** on Stellar  
+✅ **Fast, low-cost transactions** (seconds, not days)  
+✅ **No paperwork** - everything digital and automated
+
+---
+
+## 🚀 Key Features
+
+### For Landlords
+- 🏢 **Property Management** - Create property profiles with rent amounts
+- 🔗 **Payment Links** - Generate unique, shareable payment URLs
+- 📊 **Payment Tracking** - View all incoming payments in real-time
+- 🧾 **Digital Receipts** - Automatic receipt generation for every payment
+
+### For Tenants
+- 💳 **Easy Payments** - Pay rent with Freighter wallet in seconds
+- 🔐 **Secure** - Blockchain-verified transactions
+- 📱 **Mobile-Friendly** - Pay from any device
+- 📜 **Payment History** - Access all past receipts anytime
+
+### Technical Highlights
+- ⚡ **Stellar Blockchain** - Fast (3-5 sec) and cheap (<$0.01) transactions
+- 🦀 **Rust Smart Contract** - Secure, auditable on-chain logic
+- 🔒 **Freighter Integration** - Non-custodial wallet support
+- 🌐 **Full-Stack** - React + Node.js + MongoDB + Soroban
+
+---
+
+## 🏗️ Architecture
+
+```
+┌─────────────────┐      ┌──────────────────┐      ┌─────────────────┐
+│  React Client   │─────▶│   Node.js API    │─────▶│    MongoDB      │
+│  (Freighter)    │      │   (Express)      │      │   (Receipts)    │
+└────────┬────────┘      └──────────────────┘      └─────────────────┘
+         │
+         │ Stellar SDK
+         ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│                    Stellar Blockchain (Testnet)                     │
+│  ┌──────────────────────────────────────────────────────────────┐  │
+│  │  Soroban Smart Contract (Rust)                               │  │
+│  │  • register_property()  • record_payment()                   │  │
+│  │  • get_property()       • get_tenant_payments()              │  │
+│  └──────────────────────────────────────────────────────────────┘  │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 📦 Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| **Smart Contract** | Rust, Soroban SDK |
+| **Blockchain** | Stellar (Testnet) |
+| **Backend** | Node.js, Express, MongoDB |
+| **Frontend** | React, React Router |
+| **Wallet** | Freighter API |
+| **Deployment** | Vercel (Client), Docker |
+| **CI/CD** | GitHub Actions |
+
+---
+
+## 🎯 Quick Start
 
 ### Prerequisites
+- [Freighter Wallet](https://www.freighter.app/) browser extension
 - Node.js 18+
-- MongoDB running locally
-- [Freighter browser extension](https://www.freighter.app/) installed
+- MongoDB (or use Docker)
 
-### Server
+### Option 1: Docker (Recommended)
 ```bash
-cd server
-cp .env.example .env
-npm install
-npm run dev
-```
-
-### Client
-```bash
-cd client
-npm install
-npm start
-```
-
-## Deployed Smart Contract (Testnet)
-
-| | |
-|---|---|
-| Contract ID | `CABGAA7QC6DB5GWKCWJICIR3EVAKSPJ34237ZVCJQAJIWZFTEIOL5LNT` |
-| Network | Stellar Testnet |
-| Explorer | [View on Stellar Expert](https://stellar.expert/explorer/testnet/contract/CABGAA7QC6DB5GWKCWJICIR3EVAKSPJ34237ZVCJQAJIWZFTEIOL5LNT) |
-
-### Contract Functions
-| Function | Description |
-|---|---|
-| `register_property` | Landlord registers a property, returns property ID |
-| `deactivate_property` | Landlord deactivates a property |
-| `record_payment` | Tenant records a rent payment receipt on-chain |
-| `get_property` | Fetch property details by ID |
-| `get_payment` | Fetch payment receipt by ID |
-| `get_landlord_properties` | Get all property IDs for a landlord |
-| `get_tenant_payments` | Get all payment IDs for a tenant |
-| `get_property_payments` | Get all payment IDs for a property |
-| `property_count` | Total properties registered |
-| `payment_count` | Total payments recorded |
-
-
-- **Landlord**: Create property profiles, get shareable payment links
-- **Tenant**: Pay rent via Freighter wallet (XLM), get instant blockchain receipts
-- **History**: Full payment history for both landlords and tenants
-- **Receipts**: Verifiable on-chain receipts linked to Stellar Explorer
-
-## Freighter Wallet Setup
-1. Install [Freighter](https://www.freighter.app/) browser extension
-2. Create or import a Stellar wallet
-3. Switch to **Testnet** in Freighter settings
-4. Fund your testnet wallet at [Stellar Friendbot](https://friendbot.stellar.org/)
-
-## Development
-
-### Quick Start with Docker
-```bash
+git clone https://github.com/ashakumbhar08/Stellar_RentLedger.git
+cd Stellar_RentLedger
 docker-compose up -d
 ```
-Access at:
-- Frontend: http://localhost:3000
-- Backend: http://localhost:5001
-- MongoDB: localhost:27017
+Access at: http://localhost:3000
 
-### Manual Setup
-See individual setup instructions above for server and client.
+### Option 2: Manual Setup
+```bash
+# Clone repository
+git clone https://github.com/ashakumbhar08/Stellar_RentLedger.git
+cd Stellar_RentLedger
 
-## Deployment
+# Install dependencies
+make install
 
-See [DEPLOYMENT.md](DEPLOYMENT.md) for comprehensive deployment guide including:
-- CI/CD pipeline setup
+# Start development servers
+make dev
+```
+
+### Option 3: Use Makefile
+```bash
+make install    # Install all dependencies
+make dev        # Start all services
+make test       # Run tests
+make build      # Build for production
+```
+
+---
+
+## 🔐 Smart Contract
+
+**Deployed on Stellar Testnet**
+
+| Property | Value |
+|----------|-------|
+| Contract ID | `CABGAA7QC6DB5GWKCWJICIR3EVAKSPJ34237ZVCJQAJIWZFTEIOL5LNT` |
+| Network | Testnet |
+| Language | Rust (Soroban) |
+| Size | 11.8 KB (optimized) |
+
+### Contract Functions
+
+| Function | Description | Auth Required |
+|----------|-------------|---------------|
+| `register_property` | Landlord creates property listing | Landlord |
+| `record_payment` | Tenant records rent payment | Tenant |
+| `deactivate_property` | Landlord deactivates property | Landlord |
+| `get_property` | Fetch property details | Public |
+| `get_payment` | Fetch payment receipt | Public |
+| `get_landlord_properties` | Get landlord's properties | Public |
+| `get_tenant_payments` | Get tenant's payment history | Public |
+
+[View on Stellar Expert →](https://stellar.expert/explorer/testnet/contract/CABGAA7QC6DB5GWKCWJICIR3EVAKSPJ34237ZVCJQAJIWZFTEIOL5LNT)
+
+---
+
+## 💻 Usage Guide
+
+### For Landlords
+
+1. **Connect Wallet**
+   - Install Freighter extension
+   - Switch to Testnet
+   - Fund wallet at [Friendbot](https://friendbot.stellar.org)
+
+2. **Create Property**
+   - Go to Dashboard → Landlord tab
+   - Fill in property details (name, address, rent amount)
+   - Click "Create Property"
+
+3. **Share Payment Link**
+   - Copy the generated payment link
+   - Share with your tenant via email/SMS
+
+4. **Track Payments**
+   - View incoming payments in Dashboard
+   - Access receipts in History tab
+
+### For Tenants
+
+1. **Receive Payment Link**
+   - Get link from your landlord
+
+2. **Connect Wallet**
+   - Install Freighter
+   - Switch to Testnet
+   - Fund wallet
+
+3. **Pay Rent**
+   - Open payment link
+   - Review property details
+   - Enter month and memo (optional)
+   - Click "Pay" and approve in Freighter
+
+4. **Get Receipt**
+   - Instant blockchain receipt generated
+   - View in History tab anytime
+   - Verifiable on Stellar Explorer
+
+---
+
+## 🌐 API Endpoints
+
+### Properties
+```
+POST   /api/properties              Create property
+GET    /api/properties/landlord/:wallet   Get landlord properties
+GET    /api/properties/link/:link         Get property by payment link
+GET    /api/properties/:id                Get property by ID
+```
+
+### Payments
+```
+POST   /api/payments/record               Record payment
+GET    /api/payments/tenant/:wallet       Get tenant payments
+GET    /api/payments/landlord/:wallet     Get landlord payments
+```
+
+### Receipts
+```
+GET    /api/receipts/:txHash              Get receipt by transaction hash
+GET    /api/receipts/property/:id         Get property receipts
+```
+
+---
+
+## 🧪 Testing
+
+### Run All Tests
+```bash
+make test
+```
+
+### Individual Tests
+```bash
+# Smart Contract
+cd contract && cargo test
+
+# Server
+cd server && npm test
+
+# Client
+cd client && npm test
+```
+
+### Contract Test Coverage
+- ✅ Property registration
+- ✅ Payment recording
+- ✅ Property deactivation
+- ✅ Index tracking
+- ✅ Authorization checks
+
+---
+
+## 🚀 Deployment
+
+### Deploy to Vercel (Client)
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy
+cd client
+vercel --prod
+```
+
+### Deploy Server
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for:
+- Railway deployment
+- Heroku deployment
+- VPS deployment
 - Docker deployment
-- Cloud platform deployment (Vercel, Railway, Heroku)
-- Smart contract upgrades
-- Production checklist
 
-## CI/CD Pipeline
+### Deploy Smart Contract
+```bash
+cd contract
+make deploy-contract
+```
 
-The project uses GitHub Actions for automated testing and deployment:
-- **CI**: Runs tests on every push/PR (server, client, contract)
-- **Deploy**: Automatically deploys to testnet on push to `main`
-- **Release**: Creates releases with artifacts on version tags
-- **Contract Upgrade**: Manual workflow for contract upgrades
+---
 
-## Contributing
+## 📊 Project Structure
+
+```
+rentledger-pro/
+├── contract/              # Rust smart contract
+│   ├── src/lib.rs        # Contract implementation
+│   └── Cargo.toml        # Dependencies
+├── server/               # Node.js backend
+│   ├── index.js          # Express server
+│   ├── routes/           # API routes
+│   ├── models/           # MongoDB models
+│   └── utils/            # Stellar integration
+├── client/               # React frontend
+│   ├── src/
+│   │   ├── pages/        # Page components
+│   │   ├── components/   # Reusable components
+│   │   ├── context/      # Wallet context
+│   │   └── utils/        # API & Stellar utils
+│   └── public/
+├── docker-compose.yml    # Docker orchestration
+├── Makefile             # Common tasks
+└── vercel.json          # Vercel config
+```
+
+---
+
+## 🔒 Security
+
+- ✅ Non-custodial wallet (Freighter)
+- ✅ On-chain transaction verification
+- ✅ Landlord-only property management
+- ✅ Tenant-only payment recording
+- ✅ Immutable blockchain receipts
+- ✅ No private key storage
+
+---
+
+## 🛣️ Roadmap
+
+- [ ] Deploy to Stellar Mainnet
+- [ ] Add recurring payment automation
+- [ ] Multi-currency support (USDC, EURC)
+- [ ] Mobile app (React Native)
+- [ ] Email notifications
+- [ ] Dispute resolution mechanism
+- [ ] Analytics dashboard
+- [ ] KYC/AML compliance
+- [ ] Property management integrations
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please follow these steps:
 
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+2. Create feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to branch (`git push origin feature/AmazingFeature`)
+5. Open Pull Request
 
-## License
+---
 
-MIT License - see LICENSE file for details
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 👥 Team
+
+**Asha Kumbhar**
+- GitHub: [@ashakumbhar08](https://github.com/ashakumbhar08)
+- Email: ashakumbhar2006@gmail.com
+
+---
+
+## 🙏 Acknowledgments
+
+- [Stellar Development Foundation](https://stellar.org)
+- [Soroban Smart Contracts](https://soroban.stellar.org)
+- [Freighter Wallet](https://www.freighter.app)
+- Open Source Community
+
+---
+
+## 📞 Support
+
+- 📖 [Documentation](./DEPLOYMENT.md)
+- 🐛 [Report Bug](https://github.com/ashakumbhar08/Stellar_RentLedger/issues)
+- 💡 [Request Feature](https://github.com/ashakumbhar08/Stellar_RentLedger/issues)
+- 💬 [Discussions](https://github.com/ashakumbhar08/Stellar_RentLedger/discussions)
+
+---
+
+<div align="center">
+
+**⭐ Star this repo if you find it useful!**
+
+Made with ❤️ using Stellar Blockchain
+
+[Website](https://stellar-rent-ledger.vercel.app) • [GitHub](https://github.com/ashakumbhar08/Stellar_RentLedger) • [Stellar Expert](https://stellar.expert/explorer/testnet/contract/CABGAA7QC6DB5GWKCWJICIR3EVAKSPJ34237ZVCJQAJIWZFTEIOL5LNT)
+
+</div>
