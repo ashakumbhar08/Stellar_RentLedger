@@ -9,7 +9,7 @@
 
 **Blockchain-Powered Rent Payment & Digital Receipt Platform**
 
-[Live Demo](https://stellar-rent-ledger.vercel.app) • [Documentation](./DEPLOYMENT.md) • [Smart Contract](https://stellar.expert/explorer/testnet/contract/CABGAA7QC6DB5GWKCWJICIR3EVAKSPJ34237ZVCJQAJIWZFTEIOL5LNT)
+[Live Demo](https://rentledger-pro.vercel.app) • [Documentation](./DEPLOYMENT.md) • [Smart Contract](https://stellar.expert/explorer/testnet/contract/CABGAA7QC6DB5GWKCWJICIR3EVAKSPJ34237ZVCJQAJIWZFTEIOL5LNT)
 
 </div>
 
@@ -384,6 +384,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Made with ❤️ using Stellar Blockchain
 
-[Website](https://stellar-rent-ledger.vercel.app) • [GitHub](https://github.com/ashakumbhar08/Stellar_RentLedger) • [Stellar Expert](https://stellar.expert/explorer/testnet/contract/CABGAA7QC6DB5GWKCWJICIR3EVAKSPJ34237ZVCJQAJIWZFTEIOL5LNT)
+[Website](https://rentledger-pro.vercel.app) • [GitHub](https://github.com/ashakumbhar08/Stellar_RentLedger) • [Stellar Expert](https://stellar.expert/explorer/testnet/contract/CABGAA7QC6DB5GWKCWJICIR3EVAKSPJ34237ZVCJQAJIWZFTEIOL5LNT)
 
 </div>
