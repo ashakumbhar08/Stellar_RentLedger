@@ -1,0 +1,9 @@
+server/
+contract/
+node_modules/
+*.md
+.git/
+.github/
+docker-compose.yml
+Dockerfile
+Makefile
