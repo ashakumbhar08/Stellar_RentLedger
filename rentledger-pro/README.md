@@ -256,6 +256,94 @@ cd client && npm test
 
 ---
 
+## 📋 User Feedback
+
+This project has been tested with 25+ real users, and feedback has been collected to improve the platform.
+
+### 👥 Onboarded Users
+
+| User Name | Email |
+|----------|------|
+| Sudhir Bhalerao | sudhirbhalerao@gmail.com |
+| Anushka Kumbhar | anushkakumbhar2011@gmail.com |
+| Jayanthi Kumbhar | ashajayraj2006@gmail.com |
+| Rajkumar K | rajeod7645@gmail.com |
+| Asha | ashakumbhar2006@gmail.com |
+| Sunanda R Kumbhar | srk61172@gmail.com |
+| Mayuresh | mayureshpawar@gmail.com |
+| Shawn Nathan | preeti.alfred2510@gmail.com |
+| Manav | manavmaral@gmail.com |
+| Nishit | nishitbhalerao@gmail.com |
+| Sharayu | sharayudeogaonkar@gmail.com |
+| Vedant | vedantpathak@gmail.com |
+| Aakash | aakashchordiya@gmail.com |
+| Asmi Korke | asmikorke2011@gmail.com |
+| Vedang Bahirat | bahiratvedang@gmail.com |
+| Sukanya Dhaware | shreyasdhaware@gmail.com |
+| Aditi Sakore | aditisakore2011@gmail.com |
+| Palak Agarwal | palakagarwal2011@gmail.com |
+| Saksham Surte | surtesaksham@gmail.com |
+| Shourya Kadam | shouryakadam2011@gmail.com |
+| Kenneth Sojwal | kennethsojwal7258@gmail.com |
+| Pournimaa Tengale | pournimatengale@gmail.com |
+| Arya Kesare | twvolcanovolcano@gmail.com |
+| Arya Kesere | aryakesere@gmail.com |
+| Siddhi Kadam | siddhi@gmail.com |
+| Kunal Patil | kunalpatil62996@gmail.com |
+| Tanaya Chutke | tanayachutke@gmail.com |
+| Swarda Nathan | swardanatah@gmail.com |
+| Yadavi Mali | yadavimali@gmail.com |
+| Asmi Kadam | asmikadam@gmail.com |
+| Kartik Kate | t87123856@yahoo.com |
+| Shree Pillay | shawnnathan@gmail.com |
+| Gauri | kumgauri15@gmail.com |
+| Janhavi Ladde | janhavi.ladde@gmail.com |
+| Mayank Rodkae | mayan7986@gmail.com |
+| Aaron Nathan | aaronnathan07@gmail.com |
+
+### 💬 User Feedback Summary
+
+| User Name | Email | Experience | Bugs/Issues |
+|----------|------|-----------|-------------|
+| Sudhir Bhalerao | sudhirbhalerao@gmail.com | Good 👍🏻 | No |
+| Anushka Kumbhar | anushkakumbhar2011@gmail.com | Great | Noo |
+| Jayanthi Kumbhar | ashajayraj2006@gmail.com | Best | No |
+| Rajkumar K | rajeod7645@gmail.com | Good | No |
+| Asha | ashakumbhar2006@gmail.com | overall good | not as such |
+| Sunanda R Kumbhar | srk61172@gmail.com | Excellent | No |
+| Mayuresh | mayureshpawar@gmail.com | good ui | emojis are extra |
+| Shawn Nathan | preeti.alfred2510@gmail.com | Best experience the product is so great | Noo |
+| Manav | manavmaral@gmail.com | great experience | no not really |
+| Nishit | nishitbhalerao@gmail.com | user friendly | no issues |
+| Sharayu | sharayudeogaonkar@gmail.com | enjoyed this tool | minor improvements |
+| Vedant | vedantpathak@gmail.com | good | no |
+| Aakash | aakashchordiya@gmail.com | perfect | no |
+| Asmi Korke | asmikorke2011@gmail.com | Best | No bugs |
+| Vedang Bahirat | bahiratvedang@gmail.com | splendid experience | no glitches |
+| Sukanya Dhaware | shreyasdhaware@gmail.com | really good experience | No |
+| Aditi Sakore | aditisakore2011@gmail.com | Best UI overall good | No bugs |
+| Palak Agarwal | palakagarwal2011@gmail.com | Great UI | No bugs |
+| Saksham Surte | surtesaksham@gmail.com | nice | not as such |
+| Shourya Kadam | shouryakadam2011@gmail.com | good experience | No |
+| Kenneth Sojwal | kennethsojwal7258@gmail.com | 👍🏻👍🏻👍🏻 | Noo |
+| Pournimaa Tengale | pournimatengale@gmail.com | Nice | No |
+| Arya Kesare | twvolcanovolcano@gmail.com | Best experience | Noo |
+| Arya Kesere | aryakesere@gmail.com | Best UI | No |
+| Siddhi Kadam | siddhi@gmail.com | Nicee | No bugs |
+| Kunal Patil | kunalpatil62996@gmail.com | overall good experience | mostly no |
+| Tanaya Chutke | tanayachutke@gmail.com | Greattt | No |
+| Swarda Nathan | swardanatah@gmail.com | Great UI | No |
+| Yadavi Mali | yadavimali@gmail.com | Best | No |
+| Asmi Kadam | asmikadam@gmail.com | Best product | No glitches |
+| Kartik Kate | t87123856@yahoo.com | Superb | Noo |
+| Shree Pillay | shawnnathan@gmail.com | Best | No |
+| Gauri | kumgauri15@gmail.com | Good product | no bugs |
+| Janhavi Ladde | janhavi.ladde@gmail.com | user friendly good UI | no issues |
+| Mayank Rodkae | mayan7986@gmail.com | Super | Noo |
+| Aaron Nathan | aaronnathan07@gmail.com | Best | No |
+
+---
+
 ## 🚀 Deployment
 
 ### Deploy to Vercel (Client)
