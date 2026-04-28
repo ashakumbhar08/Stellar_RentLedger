@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Build
+client/build/
+
+# Environment
+server/.env
+
+# Contract secrets (keep .env with contract ID public, but not keys)
+contract/target/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+.vercel
