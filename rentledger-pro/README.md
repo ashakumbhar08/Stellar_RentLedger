@@ -400,14 +400,12 @@ Made with ❤️ using Stellar Blockchain
 
 ## 📸 Screenshots
 
-### 🖥️ Application Screens
+### 🖥️ Application Preview
 
-![Screenshot 1](./screenshots/screenshot1.png)
+![Screenshot 1](./screenshots/WhatsApp%20Image%202026-04-28%20at%209.57.47%20PM.jpeg)
 
-![Screenshot 2](./screenshots/screenshot2.png)
+![Screenshot 2](./screenshots/WhatsApp%20Image%202026-04-28%20at%209.57.47%20PM%20(1).jpeg)
 
-![Screenshot 3](./screenshots/screenshot3.png)
+![Screenshot 3](./screenshots/WhatsApp%20Image%202026-04-28%20at%209.57.47%20PM%20(2).jpeg)
 
-![Screenshot 4](./screenshots/screenshot4.png)
-
-*Note: Image file names and paths can be updated based on the actual screenshots added to the project.*
+![Screenshot 4](./screenshots/WhatsApp%20Image%202026-04-28%20at%209.57.48%20PM.jpeg)
