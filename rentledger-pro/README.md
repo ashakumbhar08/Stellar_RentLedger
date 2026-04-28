@@ -488,12 +488,18 @@ Made with ❤️ using Stellar Blockchain
 
 ## 📸 Screenshots
 
-### 🖥️ Application Preview
+### 🖥️ Dashboard
 
-![Screenshot 1](./screenshots/WhatsApp%20Image%202026-04-28%20at%209.57.47%20PM.jpeg)
+![Dashboard](./screenshots/dashboard.jpeg)
 
-![Screenshot 2](./screenshots/WhatsApp%20Image%202026-04-28%20at%209.57.47%20PM%20(1).jpeg)
+### 💳 Payment Flow
 
-![Screenshot 3](./screenshots/WhatsApp%20Image%202026-04-28%20at%209.57.47%20PM%20(2).jpeg)
+![Payment Flow](./screenshots/payment-flow.jpeg)
 
-![Screenshot 4](./screenshots/WhatsApp%20Image%202026-04-28%20at%209.57.48%20PM.jpeg)
+### 📊 Analytics
+
+![Analytics](./screenshots/analytics.jpeg)
+
+### 🔐 Login/Signup
+
+![Login Signup](./screenshots/login-signup.jpeg)
