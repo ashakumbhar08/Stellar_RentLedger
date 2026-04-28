@@ -14,6 +14,7 @@ export default function Dashboard() {
   const [formError, setFormError] = useState('');
   const [formSuccess, setFormSuccess] = useState('');
   const [copiedLink, setCopiedLink] = useState(null);
+  const [backendError, setBackendError] = useState(false);
 
   useEffect(() => {
     if (publicKey) {
@@ -25,8 +26,15 @@ export default function Dashboard() {
   async function fetchProperties() {
     try {
       const res = await getLandlordProperties(publicKey);
-      setProperties(res.data);
-    } catch {}
+      setProperties(Array.isArray(res.data) ? res.data : []);
+      setBackendError(false);
+    } catch (err) {
+      console.error('Error fetching properties:', err);
+      setProperties([]);
+      if (err.code === 'ERR_NETWORK' || err.message.includes('Network Error')) {
+        setBackendError(true);
+      }
+    }
   }
 
   async function fetchBalance() {
@@ -79,6 +87,12 @@ export default function Dashboard() {
 
   return (
     <div className="dashboard">
+      {backendError && (
+        <div className="alert alert-error" style={{ margin: '1rem 2rem' }}>
+          ⚠️ Backend server is not running. Property management features require the backend API. 
+          Please start the server with: <code>cd server && npm run dev</code>
+        </div>
+      )}
       <div className="dashboard-header">
         <div>
           <h1>Dashboard</h1>
@@ -164,8 +178,8 @@ export default function Dashboard() {
 
             {/* Properties List */}
             <div className="card">
-              <h2>Your Properties ({properties.length})</h2>
-              {properties.length === 0 ? (
+              <h2>Your Properties ({Array.isArray(properties) ? properties.length : 0})</h2>
+              {!Array.isArray(properties) || properties.length === 0 ? (
                 <p className="empty-state">No properties yet. Create one to get started.</p>
               ) : (
                 <div className="properties-list">

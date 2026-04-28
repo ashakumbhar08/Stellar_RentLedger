@@ -20,8 +20,9 @@ export default function History() {
       const res = tab === 'tenant'
         ? await getTenantPayments(publicKey)
         : await getLandlordPayments(publicKey);
-      setPayments(res.data);
-    } catch {
+      setPayments(Array.isArray(res.data) ? res.data : []);
+    } catch (err) {
+      console.error('Error fetching payments:', err);
       setPayments([]);
     } finally {
       setLoading(false);
