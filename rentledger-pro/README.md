@@ -490,16 +490,16 @@ Made with ❤️ using Stellar Blockchain
 
 ### 🖥️ Dashboard
 
-![Dashboard](./rentledger-pro/screenshots/dashboard.jpeg)
+![Dashboard](./screenshots/dashboard.jpeg)
 
 ### 💳 Payment Flow
 
-![Payment Flow](./rentledger-pro/screenshots/payment-flow.jpeg)
+![Payment Flow](./screenshots/payment-flow.jpeg)
 
 ### 📊 Analytics
 
-![Analytics](./rentledger-pro/screenshots/analytics.jpeg)
+![Analytics](./screenshots/analytics.jpeg)
 
 ### 🔐 Login/Signup
 
-![Login Signup](./rentledger-pro/screenshots/login-signup.jpeg)
+![Login Signup](./screenshots/login-signup.jpeg)
