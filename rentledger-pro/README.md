@@ -1,18 +1,25 @@
-# 🏠 RentLedger Pro
-
 <div align="center">
 
-[![CI/CD Pipeline](https://github.com/ashakumbhar08/Stellar_RentLedger/actions/workflows/ci.yml/badge.svg)](https://github.com/ashakumbhar08/Stellar_RentLedger/actions/workflows/ci.yml)
+# 🏠 RentLedger Pro
+
+### *Blockchain-Powered Rent Payment & Digital Receipt Platform*
+
+<br/>
+
+[![CI/CD Pipeline](https://github.com/ashakumbhar08/Stellar_RentLedger/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/ashakumbhar08/Stellar_RentLedger/actions/workflows/ci.yml)
+[![Deploy Pipeline](https://github.com/ashakumbhar08/Stellar_RentLedger/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/ashakumbhar08/Stellar_RentLedger/actions/workflows/deploy.yml)
+
 [![Node.js](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen?style=for-the-badge&logo=node.js)](https://nodejs.org)
 [![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org)
 [![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com)
-
 [![Stellar](https://img.shields.io/badge/Stellar-Testnet-7D00FF?style=for-the-badge&logo=stellar&logoColor=white)](https://stellar.org)
+
 [![Rust](https://img.shields.io/badge/Rust-Soroban-000000?style=for-the-badge&logo=rust&logoColor=white)](https://www.rust-lang.org)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![Vercel](https://img.shields.io/badge/Deployed-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://rentledger-pro.vercel.app)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](http://makeapullrequest.com)
 
-### Blockchain-Powered Rent Payment & Digital Receipt Platform
+<br/>
 
 [Live Demo](https://rentledger-pro.vercel.app) • [Documentation](./DEPLOYMENT.md) • [Smart Contract](https://stellar.expert/explorer/testnet/contract/CABGAA7QC6DB5GWKCWJICIR3EVAKSPJ34237ZVCJQAJIWZFTEIOL5LNT)
 
