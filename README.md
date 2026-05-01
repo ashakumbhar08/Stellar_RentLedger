@@ -7,11 +7,23 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Stellar](https://img.shields.io/badge/Stellar-Testnet-blue)](https://stellar.org)
 
+
+
+
+
 **Blockchain-Powered Rent Payment & Digital Receipt Platform**
 
 [Live Demo](https://rentledger-pro.vercel.app) • [Documentation](./DEPLOYMENT.md) • [Smart Contract](https://stellar.expert/explorer/testnet/contract/CABGAA7QC6DB5GWKCWJICIR3EVAKSPJ34237ZVCJQAJIWZFTEIOL5LNT)
 
 </div>
+
+
+
+
+Here's a Screenshot of Vercel dashboard:
+
+<img width="1470" height="956" alt="Screenshot 2026-05-01 at 2 48 05 PM" src="https://github.com/user-attachments/assets/75045d4c-be1b-4f1a-899f-bd5d6e37865e" />
+
 
 ---
 
