@@ -22,7 +22,8 @@
 
 Here's a Screenshot of Vercel dashboard:
 
-<img width="1470" height="956" alt="Screenshot 2026-05-01 at 2 48 05 PM" src="https://github.com/user-attachments/assets/75045d4c-be1b-4f1a-899f-bd5d6e37865e" />
+<img width="1470" height="956" alt="Screenshot 2026-05-01 at 2 56 14 PM" src="https://github.com/user-attachments/assets/c9078546-a77d-4403-b21c-2787ca643f7d" />
+
 
 
 ---
