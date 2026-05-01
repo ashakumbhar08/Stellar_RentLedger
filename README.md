@@ -422,8 +422,18 @@ I can't Upload Video Hence Im Providing SS Of My Project :-
 
 
 
-Here is Google Form Link :- https://docs.google.com/forms/d/e/1FAIpQLScJVBsXT07Q99UqZ4LH9CpJgyAu-bJotRcEAl9YkQkzJk71GA/viewform
-Here is Google Sheets Feedback Link :-https://docs.google.com/spreadsheets/d/1bUxNUM9eVc4Z-9sLBiwS66yOcs7LGCLt_kcMvW_5ypE/edit?resourcekey=&gid=440049520#gid=440049520
+Here is Google Form Link :- 
+
+
+https://docs.google.com/forms/d/e/1FAIpQLScJVBsXT07Q99UqZ4LH9CpJgyAu-bJotRcEAl9YkQkzJk71GA/viewform
+
+
+
+
+Here is Google Sheets Feedback Link :-
+
+
+https://docs.google.com/spreadsheets/d/1bUxNUM9eVc4Z-9sLBiwS66yOcs7LGCLt_kcMvW_5ypE/edit?resourcekey=&gid=440049520#gid=440049520
 
 
 
@@ -433,6 +443,8 @@ Here is Google Sheets Feedback Link :-https://docs.google.com/spreadsheets/d/1bU
 
 Made with ❤️ using Stellar Blockchain
 
-[Website](https://rentledger-pro.vercel.app) • [GitHub](https://github.com/ashakumbhar08/Stellar_RentLedger) • [Stellar Expert](https://stellar.expert/explorer/testnet/contract/CABGAA7QC6DB5GWKCWJICIR3EVAKSPJ34237ZVCJQAJIWZFTEIOL5LNT)
+[Website](https://rentledger-pro.vercel.app) • [GitHub]
+
+(https://github.com/ashakumbhar08/Stellar_RentLedger) • [Stellar Expert](https://stellar.expert/explorer/testnet/contract/CABGAA7QC6DB5GWKCWJICIR3EVAKSPJ34237ZVCJQAJIWZFTEIOL5LNT)
 
 </div>
