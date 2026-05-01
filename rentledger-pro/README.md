@@ -2,10 +2,14 @@
 
 <div align="center">
 
-[![CI](https://github.com/ashakumbhar08/Stellar_RentLedger/actions/workflows/ci.yml/badge.svg)](https://github.com/ashakumbhar08/Stellar_RentLedger/actions/workflows/ci.yml)
-[![Deploy](https://github.com/ashakumbhar08/Stellar_RentLedger/actions/workflows/deploy.yml/badge.svg)](https://github.com/ashakumbhar08/Stellar_RentLedger/actions/workflows/deploy.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Stellar](https://img.shields.io/badge/Stellar-Testnet-blue)](https://stellar.org)
+[![CI/CD Pipeline](https://github.com/ashakumbhar08/Stellar_RentLedger/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/ashakumbhar08/Stellar_RentLedger/actions/workflows/ci.yml)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/ashakumbhar08/Stellar_RentLedger/ci.yml?branch=main&style=flat-square&logo=github&label=build)](https://github.com/ashakumbhar08/Stellar_RentLedger/actions)
+[![Node.js Version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen?style=flat-square&logo=node.js)](https://nodejs.org)
+[![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=flat-square&logo=react&logoColor=white)](https://reactjs.org)
+[![Stellar](https://img.shields.io/badge/Stellar-Testnet-7D00FF?style=flat-square&logo=stellar&logoColor=white)](https://stellar.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-000000?style=flat-square&logo=vercel&logoColor=white)](https://rentledger-pro.vercel.app)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 **Blockchain-Powered Rent Payment & Digital Receipt Platform**
 
